@@ -1,0 +1,43 @@
+﻿@model CodeFirstApproach.Models.Student
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+<fieldset>
+    <legend>Student</legend>
+    <div class="display-label">
+        @Html.DisplayNameFor(model => model.Name)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Name)
+    </div>
+    <div class="display-label">
+        @Html.DisplayNameFor(model => model.Email)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Email)
+    </div>
+    <div class="display-label">
+        @Html.DisplayNameFor(model => model.Class)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Class)
+    </div>
+    <div class="display-label">
+        @Html.DisplayNameFor(model=>model.Address)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model=>model.Address)
+    </div>
+    <div class="display-label">
+        @Html.DisplayNameFor(model => model.Mobile)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Mobile)
+    </div>
+</fieldset>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.ID})|
+    @Html.ActionLink("back to List", "Index")
+</p>
